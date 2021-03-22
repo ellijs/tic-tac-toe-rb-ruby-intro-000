@@ -34,10 +34,19 @@ def turn(board)
 end
 
 def play(board)
+<<<<<<< HEAD
   turn(board) until over?(board)
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
+=======
+  until over?(board) == true
+    turn(board)
+  end
+  if won?(board) == !false
+    puts "Congratulations, #{winner}!"
+  elsif draw?(board) == true
+>>>>>>> fefa13670d4a48585cca0093b56577b81994478a
     puts "Cat's Game!"
   end
 end
